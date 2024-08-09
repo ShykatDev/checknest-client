@@ -1,7 +1,7 @@
 import React from "react";
 
 const page = () => {
-  return <div>Checknest</div>;
+  return <div>Favourites Task</div>;
 };
 
 export default page;
