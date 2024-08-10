@@ -3,8 +3,8 @@
 import { useContext } from "react";
 import TitleWithViewChanger from "../common/TitleWithViewChanger";
 import { viewContext } from "@/context";
-import GridViewTaskCard from "../common/cards/GridViewTaskCard";
-import ListViewTaskCard from "../common/cards/ListViewTaskCard";
+import GridViews from "../common/GridViews";
+import ListViews from "../common/ListViews";
 
 const TaskLists = () => {
   const { taskView } = useContext(viewContext);
@@ -13,8 +13,10 @@ const TaskLists = () => {
       <TitleWithViewChanger title="Task Lists" />
 
       {/* Task List Cards */}
-      {taskView.grid && <GridViewTaskCard />}
-      {taskView.list && <ListViewTaskCard />}
+      <div className="mt-6">
+        {taskView.grid && <GridViews />}
+        {taskView.list && <ListViews />}
+      </div>
     </div>
   );
 };
