@@ -1,7 +1,7 @@
-import React from "react";
+import TaskLists from "@/components/pages/TaskLists";
 
 const page = () => {
-  return <div>Checknest</div>;
+  return <TaskLists />;
 };
 
 export default page;

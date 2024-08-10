@@ -1,7 +1,7 @@
 import {
   PlusCircleIcon,
-  Squares2X2Icon,
   FlagIcon,
+  Square3Stack3DIcon,
 } from "@heroicons/react/24/solid";
 import {
   MagnifyingGlassIcon,
@@ -47,7 +47,7 @@ export const menuOptions = [
     ],
   },
   {
-    icon: <Squares2X2Icon />,
+    icon: <Square3Stack3DIcon />,
     title: "Collections",
 
     items: [
